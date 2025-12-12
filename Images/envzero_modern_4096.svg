@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4096" height="4096" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- envzero neon gradient -->
+    <linearGradient id="envzeroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4FF4D"/>
+      <stop offset="50%" stop-color="#7CF87D"/>
+      <stop offset="100%" stop-color="#3EE4A8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soft rounded square container (remove these rects for a transparent icon) -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#050A14"/>
+  <rect x="4.5" y="4.5" width="55" height="55" rx="15.5" fill="none" stroke="#1C2335" stroke-width="1"/>
+
+  <!-- Diagonal layered "env" bars -->
+  <g transform="rotate(-18 32 32)">
+    <!-- Subtle plate behind the bars -->
+    <rect x="13" y="18" width="38" height="28" rx="10" fill="#060B16"/>
+    <rect x="14" y="19" width="36" height="26" rx="9" fill="#0B111F"/>
+
+    <!-- Top bar -->
+    <rect x="16" y="22" width="32" height="4.8" rx="2.4" fill="url(#envzeroGradient)"/>
+    <!-- Middle bar -->
+    <rect x="16" y="30" width="32" height="4.8" rx="2.4" fill="url(#envzeroGradient)"/>
+    <!-- Bottom bar -->
+    <rect x="16" y="38" width="32" height="4.8" rx="2.4" fill="url(#envzeroGradient)"/>
+
+    <!-- Negative-space "0" cutout on middle bar -->
+    <rect x="28" y="29" width="8" height="7" rx="3.5" fill="#060B16"/>
+    <rect x="30" y="30.5" width="4" height="4" rx="2" fill="#0B111F"/>
+  </g>
+
+  <!-- Subtle top highlight -->
+  <path d="M12 10 C22 6 42 6 52 10" fill="none" stroke="#2C3550" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
